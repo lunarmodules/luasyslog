@@ -19,5 +19,7 @@ ignore = {
 
 
 exclude_files = {
+    ".install",
+    ".luarocks",
 }
 
