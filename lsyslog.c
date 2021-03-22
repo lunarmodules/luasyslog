@@ -136,7 +136,7 @@ static void set_info (lua_State *L)
 	lua_settable(L, -3);
 }
 
-static const struct luaL_reg lsysloglib[] =
+static const struct luaL_Reg lsysloglib[] =
 {
 	{"open", lsyslog_open},
 	{"close", lsyslog_close},

@@ -1,3 +1,5 @@
+[![build status](https://github.com/lunarmodules/luasyslog/workflows/test/badge.svg)](https://github.com/lunarmodules/luasyslog/actions?query=workflow%3Atest)
+
 # luasyslog
 Addon for LuaLogging to log to the system log on unix systems. Can also be used
 without LuaLogging.
@@ -85,8 +87,8 @@ Syslog appender parameters:
   default `"lua"`).
 - `facility`: one of the `FACILITY_XXX` constants (`int`, default
   `syslog.FACILITY_USER`).
-- additional the common parameters for LuaLogging, eg. `logPattern`, `timestampPattern`,
-  `levels`, etc.
+- additional the common parameters for LuaLogging; `logPattern`, `timestampPattern`
+  (though these do not add value in the context of syslog).
 
 ---
 
