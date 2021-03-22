@@ -1,7 +1,7 @@
 LUA_PREFIX = /usr/local/
 PREFIX	= /usr/local/
 MODULE = luasyslog
-VERSION = 1.0.0
+VERSION = 2.0.0
 
 INSTALL_PREFIX = $(PREFIX)/lib/lua/5.1/
 

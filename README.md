@@ -30,7 +30,7 @@ see [COPYING](COPYING)
 - push commit and tags
 - upload rock to LuaRocks
 
-### 2.0.0 released xx-Mar-2021, revived copy
+### 2.0.0 released 22-Mar-2021, revived copy
 - no longer rely on globals (only on Lua 5.1 `lsyslog` sets a global)
 - added standard lualogging formatting options
 - `syslog` now returns a module, same as `lsyslog`

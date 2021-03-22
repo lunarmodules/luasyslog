@@ -1,5 +1,5 @@
 local package_name = "luasyslog"
-local package_version = "dev"
+local package_version = "2.0.0"
 local rockspec_revision = "1"
 local github_account_name = "lunarmodules"
 local github_repo_name = package_name

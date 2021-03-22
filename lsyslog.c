@@ -43,10 +43,10 @@ static void set_info (lua_State *L)
 	lua_pushliteral (L, "Copyright (C) 1994-2021 Nicolas Casalini (DarkGod)");
 	lua_settable (L, -3);
 	lua_pushliteral (L, "_DESCRIPTION");
-	lua_pushliteral (L, "LuaSyslog allows to use LuaLogging with an unix Syslog daemon");
+	lua_pushliteral (L, "LuaSyslog allows to use log to an unix Syslog daemon, direct or via LuaLogging");
 	lua_settable (L, -3);
 	lua_pushliteral (L, "_VERSION");
-	lua_pushliteral (L, "LuaSyslog 1.0.0");
+	lua_pushliteral (L, "LuaSyslog 2.0.0");
 	lua_settable (L, -3);
 
 	lua_pushliteral(L, "FACILITY_AUTH");
