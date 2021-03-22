@@ -1,6 +1,6 @@
 /*
 ** LuaSystemLog
-** Copyright DarkGod 2007
+** Copyright 1994-2021 Nicolas Casalini (DarkGod)
 **
 */
 
@@ -40,7 +40,7 @@ static int lsyslog_close(lua_State *L)
 static void set_info (lua_State *L)
 {
 	lua_pushliteral (L, "_COPYRIGHT");
-	lua_pushliteral (L, "Copyright (C) 2007 DarkGod");
+	lua_pushliteral (L, "Copyright (C) 1994-2021 Nicolas Casalini (DarkGod)");
 	lua_settable (L, -3);
 	lua_pushliteral (L, "_DESCRIPTION");
 	lua_pushliteral (L, "LuaSyslog allows to use LuaLogging with an unix Syslog daemon");
