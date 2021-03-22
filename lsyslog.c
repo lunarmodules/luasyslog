@@ -146,7 +146,15 @@ static const struct luaL_Reg lsysloglib[] =
 
 int luaopen_lsyslog(lua_State *L)
 {
-	luaL_openlib(L, "lsyslog", lsysloglib, 0);
+	lua_newtable(L);
+
+#if LUA_VERSION_NUM < 502
+    // Lua 5.1 compatibility, exposing a global
+	luaL_register(L, "lsyslog", lsysloglib);
+#else
+	// Lua 5.2+ no global, just return a table
+	luaL_setfuncs (L, lsysloglib, 0);
+#endif
 
 	set_info(L);
 	return 1;

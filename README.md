@@ -31,11 +31,11 @@ see [COPYING](COPYING)
 - upload rock to LuaRocks
 
 ### 2.0.0 released xx-Mar-2021, revived copy
-- no longer rely on globals
+- no longer rely on globals (only on Lua 5.1 `lsyslog` sets a global)
 - added standard lualogging formatting options
 - `syslog` now returns a module, same as `lsyslog`
 - added new docs in `README.md`
-- added tests for the LuaLogging appender
+- added tests and CI
 
 ### 1.0.0 Original version by Nicolas Casalini (DarkGod)
 - see https://web.archive.org/web/20101223090603/http://lua.net-core.org/sputnik.lua?p=Telesto:About

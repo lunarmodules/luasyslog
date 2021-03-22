@@ -29,7 +29,6 @@ build = {
    modules = {
       lsyslog = {
          sources = "lsyslog.c",
---         defines = { "luaL_reg=luaL_Reg" },
       },
       ["logging.syslog"] = "syslog.lua",
    }
