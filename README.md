@@ -90,8 +90,11 @@ Syslog appender parameters:
   default `"lua"`).
 - `facility`: one of the `FACILITY_XXX` constants (`int`, default
   `syslog.FACILITY_USER`).
-- additional the common parameters for LuaLogging; `logPattern`, `timestampPattern`
-  (though these do not add value in the context of syslog).
+- `logPattern`: the pattern to control how the message is written. The default
+  value is `"%message"` (additional plaeholders are `"%date"` and `"%level"`).
+- `timestampPattern`: This is an optional parameter that can be used to specify
+  a date pattern that will be passed to the `os.date` function to create the
+  timestamp for the log message (the `"%date"` placeholder).
 
 ---
 
