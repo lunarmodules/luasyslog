@@ -15,6 +15,8 @@ static int lsyslog_open(lua_State *L)
 	const char *ident = luaL_checkstring(L, 1);
 	int facility = luaL_checkinteger(L, 2);
 
+	lua_pushvalue(L,1);
+	lua_setfield(L, LUA_REGISTRYINDEX, "luasyslog:ident");
 	openlog(ident, LOG_PID, facility);
 	return 0;
 }
@@ -31,6 +33,8 @@ static int lsyslog_log(lua_State *L)
 static int lsyslog_close(lua_State *L)
 {
 	closelog();
+	lua_pushnil(L);
+	lua_setfield(L, LUA_REGISTRYINDEX, "luasyslog:ident");
 	return 0;
 }
 
