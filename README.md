@@ -30,8 +30,8 @@ see [COPYING](COPYING)
 - push commit and tags
 - upload rock to LuaRocks
 
-### unreleased
-- fix possible memory corruption issue
+### 2.0.1 released 24-Mar-2021
+- fix possible memory corruption issue [#1](https://github.com/lunarmodules/luasyslog/pull/1)
 
 ### 2.0.0 released 22-Mar-2021, revived copy
 - no longer rely on globals (only on Lua 5.1 `lsyslog` sets a global)

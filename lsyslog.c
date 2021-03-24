@@ -50,7 +50,7 @@ static void set_info (lua_State *L)
 	lua_pushliteral (L, "LuaSyslog allows to use log to an unix Syslog daemon, direct or via LuaLogging");
 	lua_settable (L, -3);
 	lua_pushliteral (L, "_VERSION");
-	lua_pushliteral (L, "LuaSyslog 2.0.0");
+	lua_pushliteral (L, "LuaSyslog 2.0.1");
 	lua_settable (L, -3);
 
 	lua_pushliteral(L, "FACILITY_AUTH");
