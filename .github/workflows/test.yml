@@ -14,11 +14,11 @@ jobs:
     steps:
     - uses: actions/checkout@61b9e3751b92087fd0b06925ba6dd6314e06f089 # master
 
-    - uses: leafo/gh-actions-lua@ea0ae38722c0b45aa4e770f7c4a650c6b26800d0 # v8.0.0
+    - uses: leafo/gh-actions-lua@6919171ccf181b826f44b9bca76307b577217377 # v13.0.0
       with:
         luaVersion: ${{ matrix.luaVersion }}
 
-    - uses: leafo/gh-actions-luarocks@218573cd14f9a47b079c9b89349f9b71cb5ee706 # v4.0.0
+    - uses: leafo/gh-actions-luarocks@35d062def313a7699a0d513e996bcf4352f05389 # v6.1.0
 
     - name: setup
       run: |
@@ -39,11 +39,11 @@ jobs:
     steps:
     - uses: actions/checkout@61b9e3751b92087fd0b06925ba6dd6314e06f089 # master
 
-    - uses: leafo/gh-actions-lua@ea0ae38722c0b45aa4e770f7c4a650c6b26800d0 # v8.0.0
+    - uses: leafo/gh-actions-lua@6919171ccf181b826f44b9bca76307b577217377 # v13.0.0
       with:
         luaVersion: ${{ matrix.luaVersion }}
 
-    - uses: leafo/gh-actions-luarocks@218573cd14f9a47b079c9b89349f9b71cb5ee706 # v4.0.0
+    - uses: leafo/gh-actions-luarocks@35d062def313a7699a0d513e996bcf4352f05389 # v6.1.0
 
     - name: setup
       run: |
